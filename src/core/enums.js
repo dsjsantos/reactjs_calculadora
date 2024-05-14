@@ -4,11 +4,11 @@ const OPERATION = {
     BCK_SPACE: "backspace",
     TGL_SIGN: "toggle_sign",
     FRAC: "fraction",
-    ADD: "add",
-    SUB: "subtract",
-    MULT: "multiply",
-    DIV: "divide",
-    EQUAL: "equal",
+    ADD: "+",
+    SUB: "-",
+    MULT: "*",
+    DIV: "/",
+    EQUAL: "=",
 }
 
 export {

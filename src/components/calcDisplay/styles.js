@@ -13,7 +13,6 @@ export const DisplayContainer = styled.div`
     color: #24493D;
 
     font-family: 'Roboto';
-    font-size: 1.1rem;
     text-align: right;
 `
 
@@ -34,6 +33,8 @@ export const HistoryContainer = styled.div`
     align-self: flex-end;
     padding: 0;
     overflow-x: auto;
+
+    font-size: 1.1rem;
 `
 
 export const HistoryTopSpace = styled.div`
@@ -51,8 +52,13 @@ export const HistoryContent = styled.div`
 `
 
 export const HistoryRow = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     width: 100%;
     padding: 0.15rem 0;
+    font-weight: 500;
 
     &:first-child {
         padding-top: 0rem !important
@@ -62,4 +68,10 @@ export const HistoryRow = styled.div`
 export const HistOper = styled.span`
     margin-right: 0.5em;
     font-size: 0.9rem;
+    font-weight: inherit;
+`
+
+export const CurrentOper = styled.span`
+    margin-left: 0.25em;
+    font-weight: inherit;
 `
