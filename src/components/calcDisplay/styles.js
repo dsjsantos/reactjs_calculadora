@@ -1,6 +1,30 @@
 import styled from "styled-components";
 
+export const CopiedToClipBoard = styled.div`
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    background-color: #038d84;
+    color: #fff;
+
+    user-select: none;
+    white-space: nowrap;
+    font-weight: 100;
+    transition: all ease 0.5s;
+    opacity: 0;
+
+    &.visible {
+        opacity: 1;
+    }
+`
+
 export const DisplayContainer = styled.div`
+position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -57,7 +81,7 @@ export const HistoryRow = styled.div`
     align-items: center;
 
     width: 100%;
-    padding: 0.15rem 0;
+    padding: 0.1rem 0;
     font-weight: 500;
 
     &:first-child {
@@ -69,6 +93,11 @@ export const HistOper = styled.span`
     margin-right: 0.5em;
     font-size: 0.9rem;
     font-weight: inherit;
+`
+
+export const HistValue = styled.span`
+    cursor: pointer;
+    user-select: none;
 `
 
 export const CurrentOper = styled.span`
